@@ -47,10 +47,11 @@
           <%= simple_format @event.content %>
         </div>
       </div>
-      <p class="card-text">
-      <% if @event.only_woman %>
-      <%= "女性限定" %>
-      <% end %></p>
+      <div class="card-text">
+        <% if @event.only_woman? %>
+          <%= "女性限定" %>
+        <% end %>
+      </div>
     </div>
     <div class="col-12 col-md-4">
       <div class="card mb-3">
